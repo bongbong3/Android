@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+    <item
+        android:id="@+id/menu_memo_input"
+        android:orderInCategory="100"
+        android:title="메모쓰기"
+        />
+
+    <item
+        android:id="@+id/menu_memo_sample_data_create"
+        android:orderInCategory="101"
+        android:title="샘플메모DB생성"
+        />
+
+    <item
+        android:id="@+id/menu_memo_list_in_listview"
+        android:orderInCategory="102"
+        android:title="메모리스트"
+        />
+
+    <item
+        android:id="@+id/menu_go_household_activity"
+        android:orderInCategory="103"
+        android:title="가계부"
+        />
+
+</menu>

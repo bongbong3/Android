@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_main_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/SlateGrey"
+                android:layout_weight="1"
+                >
+                <Spinner
+                    android:id="@+id/spinner_income_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/DimGrey"
+                    android:layout_weight="1"
+                    />
+                <EditText
+                    android:id="@+id/edtxt_input_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="금액을 적으세요."
+                    android:inputType="number"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:id="@+id/button_input_submit"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="입력"
+                    android:textSize="8pt"
+                    android:textColor="@color/Black"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    android:onClick="button_submit_onclick"
+                    android:background="@color/SlateGrey"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                >
+                <ListView
+                    android:id="@+id/listview_main_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="수입"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tv_income"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="잔고"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/tv_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="날짜"
+                        android:textColor="@color/Black"
+                        android:textSize="8pt"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <EditText
+                        android:id="@+id/edtxt_main_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="날짜"
+                        android:layout_weight="5"
+                        />
+                    <!--<AutoCompleteTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:hint="연도"-->
+                        <!--android:completionThreshold="2"-->
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+                    <!--<AutoCompleteTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:hint="월"-->
+                        <!--android:completionThreshold="2"-->
+                        <!--android:layout_weight="1"-->
+                        <!--/>-->
+                    <Button
+                        android:id="@+id/button_main_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="검색"
+                        android:textColor="@color/Black"
+                        android:textSize="8pt"
+                        android:onClick="button_main_search_onclick"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+    <ListView
+        android:id="@+id/listview_drawer_main_activity"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#EDEDED"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="icon">
+        <item>@drawable/btn_select</item>
+        <item>@drawable/btn_select</item>
+        <item>@drawable/btn_select</item>
+        <item>@drawable/btn_select</item>
+    </array>
+
+    <array name="text">
+        <item>"입력"</item>
+        <item>"메모"</item>
+        <item>"가계부예시DB"</item>
+        <item>"DB초기화"</item>
+    </array>
+</resources>
